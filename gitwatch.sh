@@ -37,7 +37,7 @@
 
 REMOTE=""
 BRANCH=""
-SLEEP_TIME=2
+SLEEP_TIME=3600 # 60min * 60sec
 DATE_FMT="+%Y-%m-%d %H:%M:%S"
 COMMITMSG="Scripted auto-commit on change (%d) by gitwatch.sh"
 LISTCHANGES=-1
