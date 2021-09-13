@@ -370,6 +370,7 @@ eval "$INW" "${INW_ARGS[@]}" | while read -r line; do
         echo "Push command is $PUSH_CMD"
         eval "$PUSH_CMD"
       fi
+      notify-send "gitwatch" "Directory: $TARGETDIR sync with $REMOTE"
     fi
   ) & # and send into background
 
