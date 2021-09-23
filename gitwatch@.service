@@ -5,6 +5,8 @@ Description=Watch file or directory and git commit all changes. run with: system
 Environment="SCRIPT_ARGS=%I"
 ExecStart=/usr/local/bin/gitwatch $SCRIPT_ARGS
 ExecStop=/bin/true
+StandardOutput=file:/tmp/gitwatch.log
+StandardError=file:/tmp/gitwatch.log
 
 [Install]
 WantedBy=default.target
